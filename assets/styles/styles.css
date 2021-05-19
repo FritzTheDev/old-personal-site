@@ -1,4 +1,5 @@
 /* Navbar, Navlinks, etc. */
+/* Mobile */
 @media only screen and (max-width: 800px) {
   .navigation {
     display: flex;
@@ -58,7 +59,7 @@
     color: white;
     margin-top: -0.125em;
     margin-bottom: -0.25em;
-    font-family: 'Fugaz One', sans-serif;
+    font-family: "Fugaz One", sans-serif;
   }
 
   ul.mobile-nav-list {
@@ -89,7 +90,7 @@
     display: none;
   }
 }
-
+/* Desktop */
 @media only screen and (min-width: 800px) {
   .navigation {
     display: flex;
@@ -155,11 +156,80 @@
 
 .nav-brand {
   color: rgba(255, 255, 255, 0.85);
-  font-family: 'Fugaz One', sans-serif;
+  font-family: "Fugaz One", sans-serif;
   font-weight: 500;
-  font-size: 1.75em;
+  font-size: 1.5em;
   margin: 0;
 }
 .nav-brand:hover {
   color: rgba(255, 255, 255, 0.95);
+}
+
+/* Main Content Grid */
+
+/* Mobile */
+@media only screen and (max-width: 800px) {
+  img.blog-excerpt-image {
+    display: none;
+  }
+
+  main.primary-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 2em;
+  }
+
+  section.blog-feed {
+    grid-column: 1 / 13;
+    background-color: lightgray;
+    padding: 1em;
+    border-radius: 2em;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+  main.primary-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 2em;
+  }
+
+  section.blog-feed {
+    grid-column: 1 / 9;
+    background-color: lightgray;
+    padding: 1em;
+    border-radius: 2em;
+  }
+
+
+  div.blog-excerpt-heading {
+    display: flex;
+    align-items: center;
+  }
+
+  img.blog-excerpt-image {
+    width: 20em;
+    height: auto;
+    border-radius: 2em;
+    margin-right: 1em;
+  }
+
+  div.blog-excerpt-text {
+    margin: 1em;
+  }
+
+  h2.blog-excerpt-title {
+    font-size: 1.5em;
+  }
+
+  p.blog-read-more-text {
+    color: darkblue;
+  }
+
+  section.sidebar {
+    grid-column: 10 / 13;
+    background-color: lightgray;
+    border-radius: 2em;
+  }
 }
