@@ -1,59 +1,48 @@
-/* Resets */
-body,
-html {
-  margin: 0px;
-  padding: 0px;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a,
-span {
-  /* Don't rely on default text sizing */
-  font-size: 1em;
-  font-family: sans-serif;
-}
-
 /* Navbar, Navlinks, etc. */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 800px) {
   .navigation {
     display: flex;
     color: white;
-    background-image: linear-gradient(0.25turn, darkblue, indigo);
-    padding: .25em 1.5em;
+    background-image: linear-gradient(0.25turn, darkblue, indigo 80%);
+    box-shadow: 0px 10px 10px black;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    padding: 0.25em 1.5em;
     align-items: center;
     justify-content: space-between;
     min-height: 4em;
   }
 
-  .nav-menu-button {
+  .mobile-menu-button {
+    color: white;
     display: block;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid white;
-    border-radius: .5em;
-    font-size:1.25em;
-    padding: .5em;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+    padding: 0.5em;
+  }
+
+
+  span.desktop-extended-brand {
+    display: none;
+  }
+  .desktop-nav-list {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 800px) {
   .navigation {
     display: flex;
+    justify-content: space-between;
     color: white;
-    background-image: linear-gradient(0.25turn, darkblue, indigo);
-    padding-left: 1em;
+    background-image: linear-gradient(0.25turn, darkblue, indigo 70%);
+    box-shadow: 0px 15px 20px black;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     align-items: center;
     min-height: 4em;
   }
@@ -65,13 +54,45 @@ span {
     margin-right: auto;
   }
 
-  .nav-menu-button {
+  li.nav-item {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    min-height: 4em;
+    font-size: 1.25em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  li.nav-item:hover {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      transparent,
+      transparent,
+      transparent,
+      white
+    );
+
+    color: rgba(255, 255, 255, .95);
+  }
+
+  ul.desktop-nav-list {
+    margin: 0;
+    padding-left: 2em;
+    display: flex;
+  }
+
+  .mobile-menu-button {
     display: none;
   }
 }
 
 .nav-brand {
-  color: white;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: bold;
   font-size: 1.75em;
   margin: 0;
+}
+.nav-brand:hover {
+  color: rgba(255, 255, 255, .95);
 }
