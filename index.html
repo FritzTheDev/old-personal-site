@@ -15,11 +15,8 @@
       <a href="/" class="nav-brand">Fritz Johnson</a>
       <button class="mobile-menu-button" onclick="openMenu()">Menu</button>
       <ul class="desktop-nav-list">
-        <a href="/latest">
-          <li class="nav-item">Latest</li>
-        </a>
         <a href="/blog">
-          <li class="nav-item">Archives</li>
+          <li class="nav-item">Blog</li>
         </a>
         <a href="/projects">
           <li class="nav-item">Projects</li>
@@ -36,41 +33,37 @@
       </ul>
     </nav>
     <!-- Mobile Menu -->
-    <div style="width: 100vw; height: 100vh;">
-    <div
-      id="mobile-menu-backdrop"
-      class="mobile-nav-backdrop hidden"
-      onclick="closeMenu()"
-    ></div>
-    <nav id="mobile-menu" class="mobile-nav-menu hidden">
-      <div class="mobile-nav-content-wrapper">
-        <h3 class="mobile-nav-menu-header">Menu</h3>
-        <ul class="mobile-nav-list">
-          <a href="/blog">
-            <li class="nav-item">Latest</li>
-          </a>
-          <a href="/blog">
-            <li class="nav-item">Archives</li>
-          </a>
-          <a href="/projects">
-            <li class="nav-item">Projects</li>
-          </a>
-          <a href="https://github.com/ScraperDev">
-            <li class="nav-item">Github</li>
-          </a>
-          <a href="/contact">
-            <li class="nav-item">Contact</li>
-          </a>
-          <a href="/hire-me">
-            <li class="nav-item">Hire Me</li>
-          </a>
-          <a href="#" onclick="closeMenu()">
-            <li class="last-nav-item close-button">Close Menu</li>
-          </a>
-        </ul>
-      </div>
-    </nav>
-    </div>
+      <div
+        id="mobile-menu-backdrop"
+        class="mobile-nav-backdrop hidden"
+        onclick="closeMenu()"
+      ></div>
+      <nav id="mobile-menu" class="mobile-nav-menu hidden">
+        <div class="mobile-nav-content-wrapper">
+          <h3 class="mobile-nav-menu-header">Menu</h3>
+          <ul class="mobile-nav-list">
+            <a href="/blog">
+              <li class="nav-item">Blog</li>
+            </a>
+            <a href="/projects">
+              <li class="nav-item">Projects</li>
+            </a>
+            <a href="https://github.com/ScraperDev">
+              <li class="nav-item">Github</li>
+            </a>
+            <a href="/contact">
+              <li class="nav-item">Contact</li>
+            </a>
+            <a href="/hire-me">
+              <li class="nav-item">Hire Me</li>
+            </a>
+            <a href="#" onclick="closeMenu()">
+              <li class="last-nav-item close-button">Close Menu</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    <div>test</div>
     <script src="assets/scripts/script.js"></script>
   </body>
 </html>
