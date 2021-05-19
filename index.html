@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fritz Johnson - Software Engineer</title>
+    <title>Frederick "Fritz" Johnson</title>
 
     <link rel="stylesheet" href="/assets/styles/global.css" />
     <link rel="stylesheet" href="/assets/styles/styles.css" />
   </head>
   <body>
-    <!-- Navigation -->
+    <!-- Main Navigation -->
     <nav class="navigation">
       <a href="/" class="nav-brand">Fritz Johnson</a>
-      <button class="mobile-menu-button">Menu</button>
+      <button class="mobile-menu-button" onclick="openMenu()">Menu</button>
       <ul class="desktop-nav-list">
         <a href="/">
           <li class="nav-item">Home</li>
@@ -35,5 +35,39 @@
         </a>
       </ul>
     </nav>
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu-backdrop"
+      class="mobile-nav-backdrop hidden"
+      onclick="closeMenu()"
+    ></div>
+    <div id="mobile-menu" class="menu-wrapper hidden">
+      <nav id="mobile-menu" class="mobile-nav-menu hidden">
+        <div class="mobile-nav-content-wrapper">
+          <h3 class="mobile-nav-menu-header">Main Menu</h3>
+          <ul class="mobile-nav-list">
+            <a href="/blog">
+              <li class="nav-item">Blog</li>
+            </a>
+            <a href="/projects">
+              <li class="nav-item">Projects</li>
+            </a>
+            <a href="https://github.com/ScraperDev">
+              <li class="nav-item">Github</li>
+            </a>
+            <a href="/contact">
+              <li class="nav-item">Contact</li>
+            </a>
+            <a href="/hire-me">
+              <li class="nav-item">Hire Me</li>
+            </a>
+            <a href="#" onclick="closeMenu()">
+              <li class="last-nav-item close-button">Close Menu</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <script src="assets/scripts/script.js"></script>
   </body>
 </html>

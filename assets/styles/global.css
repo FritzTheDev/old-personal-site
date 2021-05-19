@@ -34,3 +34,7 @@ li {
 body {
   background-color: slategray;
 }
+
+.hidden {
+  display: none;
+}
