@@ -4,16 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fritz Johnson - Software Engineer</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <title>Frederick "Fritz" Johnson</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles/global.css" />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
   </head>
   <body>
+    <!-- Main Navigation -->
     <nav class="navigation">
-      <ul>
-        <li>
-          <a href="/">test</a>
-        </li>
+      <a href="/" class="nav-brand"><h1 class="nav-brand">Fritz Johnson</h1></a>
+      <button class="mobile-menu-button" onclick="openMenu()">Menu</button>
+      <ul class="desktop-nav-list">
+        <a href="/blog">
+          <li class="nav-item">Blog</li>
+        </a>
+        <a href="/projects">
+          <li class="nav-item">Projects</li>
+        </a>
+        <a href="https://github.com/ScraperDev">
+          <li class="nav-item">Github</li>
+        </a>
+        <a href="/contact">
+          <li class="nav-item">Contact</li>
+        </a>
+        <a href="/hire-me">
+          <li class="nav-item">Hire Me</li>
+        </a>
       </ul>
     </nav>
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu-backdrop"
+      class="mobile-nav-backdrop hidden"
+      onclick="closeMenu()"
+    ></div>
+    <nav id="mobile-menu" class="mobile-nav-menu hidden">
+      <div class="mobile-nav-content-wrapper">
+        <h3 class="mobile-nav-menu-header">Menu</h3>
+        <ul class="mobile-nav-list">
+          <a href="/blog">
+            <li class="nav-item">Blog</li>
+          </a>
+          <a href="/projects">
+            <li class="nav-item">Projects</li>
+          </a>
+          <a href="https://github.com/ScraperDev">
+            <li class="nav-item">Github</li>
+          </a>
+          <a href="/contact">
+            <li class="nav-item">Contact</li>
+          </a>
+          <a href="/hire-me">
+            <li class="nav-item">Hire Me</li>
+          </a>
+          <a href="#" onclick="closeMenu()">
+            <li class="last-nav-item close-button">Close Menu</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main Page Content -->
+    <main class="primary-grid">
+      <section class="blog-feed">
+        <a href="/html-css-js">
+          <article class="blog-excerpt">
+            <div class="blog-excerpt-heading">
+              <img class="blog-excerpt-image" src="/assets/images/html.jpeg" />
+              <div class="blog-excerpt-text">
+                <h2 class="blog-excerpt-title">HTML / CSS / JS - What I learned building sites from scratch</h2>
+                <small>Wednesday, May 19 - 12:09 PM</small>
+                <p>There's no shortage of frontend web frameworks out there - and that's a good thing! React, Vue, Angular, Svelte & Alpine - Not to mention CSS frameworks like Tailwind, Bootstrap & Bulma... You get the picture. Why did I start building sites from scratch? To learn from first...</p>
+                <p class="blog-read-more-text">Read More >></p>
+              </h2>
+            </div>
+          </article>
+        </a>
+      </section>
+      <section class="sidebar">test</section>
+    </main>
+    <script src="assets/scripts/script.js"></script>
   </body>
 </html>
