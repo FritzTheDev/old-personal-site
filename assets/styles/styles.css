@@ -191,17 +191,30 @@
 @media only screen and (min-width: 800px) {
   main.primary-grid {
     display: grid;
+    gap: 2em;
     grid-template-columns: repeat(12, 1fr);
     margin: 2em;
   }
 
   section.blog-feed {
-    grid-column: 1 / 9;
-    background-color: lightgray;
+    grid-column: 1 / 10;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  article.first-blog-excerpt {
+    margin-top: 0em;
     padding: 1em;
+    background-color: lightgray;
     border-radius: 2em;
   }
 
+  article.blog-excerpt {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: lightgray;
+    border-radius: 2em;
+  }
 
   div.blog-excerpt-heading {
     display: flex;
